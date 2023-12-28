@@ -1,2 +1,25 @@
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import './app-bar.css';
+:root{
+    --c-background : #222831;
+}
+body{
+    background-color: var(--c-background);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--c-background);
+}
 
+#hero{
+    background: linear-gradient(#2228316f,#66666640),url('../img/background.png');
+    width: 100%;
+    height: 801px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+}
