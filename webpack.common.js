@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const {EnvironmentPlugin} = require('webpack');
 
 module.exports = {
     entry : './src/app.js',
@@ -26,6 +27,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template : './src/index.html',
             filename : 'index.html'
+        }),
+        new EnvironmentPlugin({
+            BASE_URL : "https://api.themoviedb.org/3",
+            BEARER_TOKEN : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiOTU3YjY0MjFmOTUwYjE4OTM2MzMxNjUwYTZmMTc2ZiIsInN1YiI6IjY1OGMzNDM0YjY4NmI5MWZmZWRlNjYyMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.354Mh_zeaaPcDxVBF9VGtOprml_ojr0d2cjk7tDmKyk"
         })
     ]
 }

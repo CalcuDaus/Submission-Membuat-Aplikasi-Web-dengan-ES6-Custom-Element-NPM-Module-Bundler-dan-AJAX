@@ -11,3 +11,10 @@ Recomended Suggestion
         - Using optimization bundle such as minifying or split chunk.
     5. Target Completed
         - Before next year 2024
+
+
+
+API 
+    - popular
+    - trending
+    - search
