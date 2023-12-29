@@ -21,6 +21,7 @@
     top: 100px;
     right: 0;
     rotate: 40deg;
+    z-index: -1;
     background: linear-gradient(#004265,#d70a84);
     border-radius: 33% 67% 70% 30% / 30% 36% 64% 70% ;
     width: 300px;

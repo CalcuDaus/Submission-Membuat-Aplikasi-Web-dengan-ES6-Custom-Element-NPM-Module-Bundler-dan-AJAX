@@ -38,7 +38,7 @@
 .img-tren-wrapper img{
     width: 100%;
     position: relative;
-    z-index: 2;
+    z-index: 99;
     -webkit-mask-image: url('../img/clipmask.png');
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;

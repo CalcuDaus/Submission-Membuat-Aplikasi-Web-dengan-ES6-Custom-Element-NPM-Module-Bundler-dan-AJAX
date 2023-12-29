@@ -1,5 +1,7 @@
 import Swiper from "swiper/bundle";
 import 'swiper/css/bundle';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const axios = require("axios");
 const option = {
@@ -11,6 +13,7 @@ const option = {
 }
 
 const main = () => {
+
     axios.get(`${process.env.BASE_URL}/search/movie?query=tes&include_adult=true&language=en-US&page=2`,option)
     .then(function (response) {
         console.log(response);
@@ -20,7 +23,7 @@ const main = () => {
       })
 
       // swiper
-      var swiper = new Swiper(".mySwiper", {
+      let swiper = new Swiper(".mySwiper", {
         slidesPerView: 2,
         spaceBetween: 30,
         pagination: {
@@ -28,6 +31,9 @@ const main = () => {
           clickable: true,
         },
       });
+
+      // AOS
+      AOS.init();
 };
 
 export default main;
