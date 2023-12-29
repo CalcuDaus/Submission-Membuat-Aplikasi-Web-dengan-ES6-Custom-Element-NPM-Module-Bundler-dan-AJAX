@@ -1,25 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import './app-bar.css';
+@import './hero.css';
+@import './trending-section.css';
+@import './popular-section.css';
+
 :root{
     --c-background : #222831;
 }
+*{
+    font-family: 'poppins';
+}
 body{
     background-color: var(--c-background);
+    overflow-x: hidden;
 }
 header{
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     background-color: var(--c-background);
-}
-
-#hero{
-    background: linear-gradient(#2228316f,#66666640),url('../img/background.png');
-    width: 100%;
-    height: 801px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -100px;
+    z-index: 3;
 }
