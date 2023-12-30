@@ -12,6 +12,17 @@ const option = {
 };
 
 const main = () => {
+  // element
+  const btnToggle = document.querySelector(".hamburger");
+  const navList = document.querySelector(".nav-list");
+  const btnSearch = document.querySelector('#search-button');
+  const trenEl = document.querySelector('#trending');
+  const popEl = document.querySelector('#popular');
+  const heroEl = document.querySelector('#hero');
+  const navsEl = document.querySelectorAll('.app-bar a');
+
+
+
   // swiper
   let swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
@@ -41,12 +52,37 @@ const main = () => {
   //   })
 
   // Button Toggle
-  const btnToggle = document.querySelector(".hamburger");
-  const navList = document.querySelector(".nav-list");
   btnToggle.addEventListener("click", () => {
     navList.classList.toggle("active");
   });
 
+  // show elemet
+  const showEl = ()=>{
+    showElement();
+  }
+
+
+  //search control
+ const onClickSeacrhButton = ()=>{
+    hideElement();
+ }
+
+ const hideElement = ()=>{
+  trenEl.style.display = 'none';
+  popEl.style.display = 'none';
+  heroEl.style.display = 'none';
+ }
+ const showElement = ()=>{
+  trenEl.style.display = 'block';
+  popEl.style.display = 'block';
+  heroEl.style.display = 'block';
+ }
+
+ btnSearch.addEventListener('click',onClickSeacrhButton);
+
+ navsEl.forEach(nav => {
+  nav.addEventListener('click',showEl);
+ });
   // AOS
   AOS.init();
 };

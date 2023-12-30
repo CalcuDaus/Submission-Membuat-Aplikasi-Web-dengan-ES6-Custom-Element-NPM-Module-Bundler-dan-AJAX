@@ -5,6 +5,8 @@
 @import './trending-section.css';
 @import './popular-section.css';
 @import './dropdown.css';
+@import './film-item.css';
+@import './film-list.css';
 
 :root{
     --c-background : #222831;
