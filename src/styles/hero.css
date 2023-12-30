@@ -1,5 +1,3 @@
-
-
 /* Hero Section */
 #hero{
     background: linear-gradient(#2228316f,#66666640),url('../img/background.png');
@@ -74,4 +72,24 @@
 .card-hero:hover img:nth-child(3){
     transform: translate(20px,-30px);
     rotate: 15deg;
+}
+@media screen and (max-width: 675px) {
+    #hero{
+        height: 1100px;
+    }
+    .container-hero{
+        margin-top: 300px;
+       flex-direction: column;
+    }
+    .text-hero{
+        width: 100%;
+    }
+    .img-hero{
+        margin-top: 100px;
+        width: 100%;
+    }
+    .card-hero{
+        left: 50px;
+    }
+
 }

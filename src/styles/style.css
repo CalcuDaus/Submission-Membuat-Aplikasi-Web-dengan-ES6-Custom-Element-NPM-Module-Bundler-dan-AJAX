@@ -4,6 +4,7 @@
 @import './hero.css';
 @import './trending-section.css';
 @import './popular-section.css';
+@import './dropdown.css';
 
 :root{
     --c-background : #222831;
@@ -23,5 +24,5 @@ header{
     align-items: center;
     padding: 20px;
     background-color: var(--c-background);
-    z-index: 3;
+    z-index: 9999;
 }

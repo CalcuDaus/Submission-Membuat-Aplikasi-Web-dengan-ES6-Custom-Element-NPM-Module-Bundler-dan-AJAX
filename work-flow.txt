@@ -1,10 +1,10 @@
 Recomended Suggestion
     1. Beautiful UI 
-        - Using Bootstrap or Tailwind
-        - Using colorhunt for Color Pallete
+        - Using Bootstrap or Tailwind ✔
+        - Using colorhunt for Color Pallete ✔
     2. Using Library 
-        - how to use axios as library for API
-        - how to use JQuery as library for manipulation DOM
+        - how to use axios as library for API ✔
+        - how to use JQuery as library for manipulation DOM ✔
     3. Write Clean Code
     4. Exploration For using webpack
         - Using more loader or plugin

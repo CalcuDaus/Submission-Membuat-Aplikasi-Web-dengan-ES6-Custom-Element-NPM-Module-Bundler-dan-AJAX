@@ -1,6 +1,6 @@
 #popular{
     position: relative;
-    padding-top: 150px;
+    padding-top: 180px;
     background: linear-gradient(-90deg,#222831,#00426500);
 }
 #popular::before{
@@ -47,4 +47,12 @@
     margin-left: 50px;
     font-family: 'Rubik Doodle Shadow';
     color: whitesmoke;
+}
+
+@media screen and (max-width: 800px) {
+    #popular h1 {
+      top: 19px;
+      left: 31px;
+      font-size: 56px;
+    }
 }

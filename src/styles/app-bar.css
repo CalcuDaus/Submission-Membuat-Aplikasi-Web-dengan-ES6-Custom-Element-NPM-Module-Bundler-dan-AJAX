@@ -56,3 +56,31 @@
     background: linear-gradient(-30deg,#d70a84,#51127f);
     color: whitesmoke;
 }
+.app-bar .hamburger{
+    display: none;
+ }
+ .app-bar nav.active{
+    height: 200px;
+ }
+ .hamburger{
+    cursor: pointer;
+ }
+@media screen and (max-width: 675px) {
+    .app-bar nav{
+        height: 0;
+        overflow: hidden;
+        transition: all .5s;
+        margin-left: -200px;
+    }
+ .app-bar nav ul {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+ }  
+ .app-bar .hamburger{
+    display: block;
+ } 
+ .search-bar input {
+    margin-left: 0;
+ }
+}
