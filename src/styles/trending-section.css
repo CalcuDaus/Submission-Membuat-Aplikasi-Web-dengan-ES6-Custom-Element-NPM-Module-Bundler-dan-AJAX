@@ -36,6 +36,12 @@
 .img-card-wrapper {
   width: 50%;
 }
+/* .img-tren-info{
+  width: 600px;
+  position: absolute;
+  top: 0;
+  z-index: 999999;
+} */
 .img-tren-wrapper img {
   width: 100%;
   position: relative;
@@ -56,7 +62,8 @@
 .swiper {
   cursor: grabbing;
   width: 100%;
-  height: 390px;
+  height: 466px;
+  padding: 20px !important;
 }
 
 .swiper-slide {
@@ -75,6 +82,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: 4px 7px 15px black;
 }
 
 @media screen and (max-width: 800px) {

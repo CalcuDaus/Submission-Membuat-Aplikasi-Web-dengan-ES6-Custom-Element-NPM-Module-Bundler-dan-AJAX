@@ -4,30 +4,30 @@
     margin: 0;
     padding: 0;
 }
-.app-bar{
+app-bar{
     width: 100%;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
 }
-.app-bar nav{
+app-bar nav{
     display: flex;
     align-items: center;
 }
-.app-bar ul{
+app-bar ul{
     margin-top: 15px;
     display: flex;
     gap: 20px;
     list-style: none;
 }
-.app-bar li{
+app-bar li{
     transition: all .2s;
 }
-.app-bar li:nth-child(2):hover,
-.app-bar li:nth-child(1):hover{
+app-bar li:nth-child(2):hover,
+app-bar li:nth-child(1):hover{
     border-bottom: 4px solid #d70a84;
 }
-.app-bar ul li a{
+app-bar ul li a{
     color: whitesmoke;
     text-decoration: none;
     font-weight: 600;
@@ -56,28 +56,28 @@
     background: linear-gradient(-30deg,#d70a84,#51127f);
     color: whitesmoke;
 }
-.app-bar .hamburger{
+app-bar .hamburger{
     display: none;
  }
- .app-bar nav.active{
+ app-bar nav.active{
     height: 200px;
  }
  .hamburger{
     cursor: pointer;
  }
 @media screen and (max-width: 675px) {
-    .app-bar nav{
+    app-bar nav{
         height: 0;
         overflow: hidden;
         transition: all .5s;
         margin-left: -200px;
     }
- .app-bar nav ul {
+ app-bar nav ul {
     margin-top: 70px;
     display: flex;
     flex-direction: column;
  }  
- .app-bar .hamburger{
+ app-bar .hamburger{
     display: block;
  } 
  .search-bar input {
