@@ -1,5 +1,20 @@
 class FilmSource {
-  static searchFilm(keyword) {}
+  static searchFilm(axios, option,keyword) {
+    return new Promise((resolve, reject) => {
+      axios
+        .get(
+          `${process.env.BASE_URL}/search/movie?query=${keyword}&include_adult=false&language=en-US`,
+          option
+        )
+        .then(function(response) {
+          resolve(response);
+        })
+        .catch(function(error) {
+          reject(error);
+        });
+
+    });
+  }
 
   static trendingFilm(axios, option) {
     return new Promise((resolve, reject) => {

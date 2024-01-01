@@ -108,6 +108,9 @@ const main = () => {
 
   //search control
   const onClickSeacrhButton = () => {
+    FilmSource.searchFilm(axios,option,'marvel').then(response=>console.log(response.data.results))
+
+
     hideElement();
   };
 
@@ -126,6 +129,7 @@ const main = () => {
 
   appBarElement.clickNav = showEl;
   appBarElement.clickSearch = onClickSeacrhButton;
+
   // AOS
   AOS.init();
 };
