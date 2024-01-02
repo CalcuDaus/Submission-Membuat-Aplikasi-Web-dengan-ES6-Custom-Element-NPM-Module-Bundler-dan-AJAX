@@ -12,6 +12,9 @@ Recomended Suggestion
     5. Target Completed
         - Before next year 2024
 
+write clean code 
+shadowDOM in film item and film list
+
 
 
 API 

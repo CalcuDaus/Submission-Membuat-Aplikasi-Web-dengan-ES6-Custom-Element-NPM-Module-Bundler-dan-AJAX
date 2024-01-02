@@ -1,9 +1,9 @@
 class FilmSource {
-  static searchFilm(axios, option,keyword) {
+  static searchFilm(axios, option,keyword,page = 1) {
     return new Promise((resolve, reject) => {
       axios
         .get(
-          `${process.env.BASE_URL}/search/movie?query=${keyword}&include_adult=false&language=en-US`,
+          `${process.env.BASE_URL}/search/movie?query=${keyword}&include_adult=false&language=en-US&page=${page}`,
           option
         )
         .then(function(response) {

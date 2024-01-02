@@ -15,6 +15,9 @@ class AppBar extends HTMLElement {
     this._clickNav = event;
     this.render();
   }
+  get value(){
+    return this.shadowDOM.querySelector('#search-input').value;
+  }
 
   render() {
     this.shadowDOM.innerHTML = `
