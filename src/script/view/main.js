@@ -60,16 +60,18 @@ const main = () => {
   handleSwiper(FilmSource.trendingFilm, 0);
   handleSwiper(FilmSource.popularFilm, 1);
 
-  const imgTrenEl = document.querySelector("#img-poster-tren");
-  const imgPopEl = document.querySelector("#img-poster-pop");
-  setInterval(() => {
-    imgTrenEl.src = document.querySelectorAll(
-      ".swiper-slide-active"
-    )[0].children[0].src;
-    imgPopEl.src = document.querySelectorAll(
-      ".swiper-slide-active"
-    )[1].children[0].src;
-  }, 100);
+  if(document.querySelector('.container-film').children.length == 1){
+    const imgTrenEl = document.querySelector("#img-poster-tren");
+    const imgPopEl = document.querySelector("#img-poster-pop");
+    setInterval(() => {
+      imgTrenEl.src = document.querySelectorAll(
+        ".swiper-slide-active"
+      )[0].children[0].src;
+      imgPopEl.src = document.querySelectorAll(
+        ".swiper-slide-active"
+      )[1].children[0].src;
+    }, 100);
+  }
 
   let ulElement = document.createElement("ul");
   ulElement.classList.add("pagination-c");

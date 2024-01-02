@@ -4,6 +4,7 @@
   "description": "Application for searching information movie",
   "main": "index.js",
   "scripts": {
+    "build" : "webpack --config webpack.prod.js",
     "start": "webpack serve --config webpack.dev.js"
   },
   "author": "Muhammad Firdaus",
